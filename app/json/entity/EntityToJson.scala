@@ -4,6 +4,7 @@ import play.api.libs.json._
 import plm.universe.Entity
 import plm.universe.bugglequest.AbstractBuggle
 import play.api.libs.json.Json.toJsFieldJsValueWrapper
+import plm.universe.turtles.Turtle
 
 object EntityToJson {
   
@@ -20,6 +21,8 @@ object EntityToJson {
     entity match {
       case abstractBuggle: AbstractBuggle =>
         json = AbstractBuggleToJson.abstractBuggleWrite(abstractBuggle)
+      case turtle: Turtle =>
+        json = TurtleToJson.turtleWrite(turtle)
     }
     
     return Json.obj( 
