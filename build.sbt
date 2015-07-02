@@ -18,9 +18,9 @@ resolvers := ("Atlassian Releases" at "https://maven.atlassian.com/public/") +: 
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 libraryDependencies ++= Seq(
-  "org.scala-lang" % "scala-library" % "2.11.4",
-  "org.scala-lang" % "scala-compiler" % "2.11.4",
-  "org.scala-lang" % "scala-reflect" % "2.11.4",
+  "org.scala-lang" % "scala-library" % "2.11.6",
+  "org.scala-lang" % "scala-compiler" % "2.11.6",
+  "org.scala-lang" % "scala-reflect" % "2.11.6",
   "org.scalatest" %% "scalatest" % "2.2.1" % "test",
   "org.scalatestplus" %% "play" % "1.2.0" % "test",
   "com.mohiva" %% "play-silhouette" % "2.0",
