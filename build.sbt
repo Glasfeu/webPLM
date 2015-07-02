@@ -18,6 +18,8 @@ resolvers := ("Atlassian Releases" at "https://maven.atlassian.com/public/") +: 
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 libraryDependencies ++= Seq(
+  "org.scalaz" % "scalaz-core_2.10" % "7.0.2",
+  "org.scalaz" % "scalaz-effect_2.10" % "7.0.2",
   "org.scala-lang" % "scala-library" % "2.11.6",
   "org.scala-lang" % "scala-compiler" % "2.11.6",
   "org.scala-lang" % "scala-reflect" % "2.11.6",
