@@ -11,8 +11,6 @@ name := "web-PLM"
 
 version := "1.0-SNAPSHOT"
 
-scalaVersion := "2.11.4"
-
 resolvers := ("Atlassian Releases" at "https://maven.atlassian.com/public/") +: resolvers.value
 
 resolvers += Resolver.sonatypeRepo("snapshots")
